@@ -1,5 +1,7 @@
 *{
     box-sizing:border-box;
+    margin:0;
+    padding:0;
   }
   .calendario{
     border:1px solid blue;
@@ -11,12 +13,19 @@
   .mes {
     border:1px solid red;
     width:14em;
+    //añadido
+    display: flex;
+    flex-wrap: wrap;
   }
   .nombre{
     border: 1px solid black;
     height: 2em;
+    //añadido
+    flex-basis: 100%;
   }
   .mes>div:nth-child(n+2){
     border: 1px solid black;
     height:2em;
+    //añadido
+    flex-basis: (100%/7);
   }
