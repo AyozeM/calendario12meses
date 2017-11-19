@@ -1,31 +1,116 @@
+/*Colores primarios*/
+/*Colores secundarios*/
+/*Colores primarios*/
+/*Colores secundarios*/
+.noDiasMes {
+  background-color: #b0aeae;
+  opacity: .7; }
+
+.diaActual {
+  font-family: Helvetica;
+  background-color: #01678f; }
+  .diaActual:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    cursor: pointer; }
+
+nav {
+  width: 100%;
+  padding: 2%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    nav button:hover {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5); }
+
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+  font-family: Arial; }
 
 .calendario {
-  border: 1px solid blue;
   width: 50em;
   margin: 0 auto;
   height: 70em;
-}
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
 
 .mes {
-  border: 1px solid red;
   width: 14em;
+  color: #f5f3f1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
+  background-color: #dd6d10; }
+  @media screen and (max-width: 768px) {
+    .mes {
+      -webkit-flex-basis: 75%;
+      -ms-flex-preferred-size: 75%;
+      flex-basis: 75%; } }
 
 .nombre {
-  border: 1px solid black;
   height: 2em;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
-}
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #123645;
+  font-family: Helvetica; }
 
 .mes > div:nth-child(n+2) {
-  border: 1px solid black;
   height: 2em;
+  -webkit-flex-basis: 14.28571%;
+  -ms-flex-preferred-size: 14.28571%;
   flex-basis: 14.28571%;
-}
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }

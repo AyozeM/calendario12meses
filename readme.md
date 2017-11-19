@@ -26,7 +26,7 @@ La fuente principal será:
 La fuente secundaria sera usada solamente para destacar el mes y el dia actual:
 - **Helvetica Neue** tambien con un tamaño minimo de **0.6em**
 
-* * * 
+* * *
 # Estructura
 En el archivo **_colores.scss** se definiran variables con los colores antes expuestos.
 

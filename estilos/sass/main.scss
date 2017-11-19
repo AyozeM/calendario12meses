@@ -1,31 +1,30 @@
+@import "_colores.scss";
+@import "_estilos.scss";
 *{
     box-sizing:border-box;
     margin:0;
     padding:0;
+    font-family: Arial;
   }
   .calendario{
-    border:1px solid blue;
+    //border:1px solid blue;
     width: 50em;
     margin: 0 auto;
     height: 70em;
-    
+    @include calendario();
   }
   .mes {
-    border:1px solid red;
+    //border:1px solid red;
     width:14em;
-    //añadido
-    display: flex;
-    flex-wrap: wrap;
+    @include mes();
   }
   .nombre{
-    border: 1px solid black;
+    //border: 1px solid black;
     height: 2em;
-    //añadido
-    flex-basis: 100%;
+    @include nombreMes();
   }
   .mes>div:nth-child(n+2){
-    border: 1px solid black;
+    //border: 1px solid black;
     height:2em;
-    //añadido
-    flex-basis: (100%/7);
+    @include dias();
   }
